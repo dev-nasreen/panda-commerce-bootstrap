@@ -1,0 +1,32 @@
+.panda-carousel{
+    background-color: #fceae8;
+}
+.panda-btn{
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+}
+.price{color:#FF136F}
+.color{
+    color:black;
+}
+section{
+    margin: 100px 0;
+}
+.cat1, .cat2, .cat3{
+    width:90%;
+}
+.cat1 img, .cat2 img, .cat3 img{
+    width:100px;
+}
+.cat1{
+    background-color: orange;
+}
+.cat2{
+    background-color: orchid;
+}
+.cat3{
+    background-color:blue ;
+}
+.contact-area{
+    background-color: #fceae8;
+    padding: 100px 0;
+}

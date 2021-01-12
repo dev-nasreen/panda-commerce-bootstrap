@@ -4,40 +4,261 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap practice</title>
+  <title>Panda Ecommerce</title>
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <!-- Start Header Section  -->
+  <header class="container mb-5">
+    <div class="row mb-5">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand border border-dark rounded-3 border-2" href="#"><img src="assets/images/logo.png"
+            alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
+  <!-- End Header Section  -->
+
+  <!-- Start main Area  -->
+  <main class="container">
+
+    <!-- Start Banner Section  -->
+    <section class="banner ">
+      <div class="row">
+        <div id="carouselExampleInterval" class="carousel slide rounded-3 panda-carousel" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active panda-carousel-item " data-interval="10000">
+              <div class="row d-flex justify-content-center align-items-center p-4">
+                <div class="col-md-7">
+                  <h1>Mega LCD TV For Sports</h1>
+                  <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
+                  <h2 class="price">$1200</h2>
+                  <button class="btn panda-btn text-white px-4 mt-4">Buy Now</button>
+                </div>
+                <div class="col-md-5">
+                  <img src="assets/images/banner-images/tv.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item panda-carousel-item " data-interval="2000">
+              <div class="row d-flex justify-content-center align-items-center p-5">
+                <div class="col-md-7">
+                  <h1>Cool Dude Headphone</h1>
+                  <p>This is the best headphone in the world for people who just want to waste time in front of funky
+                    world.</p>
+                  <h2 class="price">$420</h2>
+                  <button class="btn panda-btn text-white px-4 mt-4">Buy Now</button>
+                </div>
+                <div class="col-md-5">
+                  <img src="assets/images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item  panda-carousel-item ">
+              <div class="row d-flex justify-content-center align-items-center p-5">
+                <div class="col-md-7">
+                  <h1>X-Box for your living room</h1>
+                  <p>This is the best x-box in the world for people who just want to waste time in front of fake sports.
+                  </p>
+                  <h2 class="price">$600</h2>
+                  <button class="btn panda-btn text-white px-4 mt-4">Buy Now</button>
+                </div>
+                <div class="col-md-5">
+                  <img src="assets/images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End Banner Section  -->
+
+    <!-- Start Categories section  -->
+    <section class="categories">
+      <div class="row justify-content-between">
+        <div class="col-md-4 ">
+          <div class=" cat1 p-3 rounded-2 d-flex align-items-center justify-content-between">
+            <h1 class="text-white">Watch</h1>
+            <img src="assets/images/categories/watch.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4  ">
+          <div class=" cat2 p-3 rounded-2 d-flex align-items-center justify-content-between">
+            <h1 class="text-white">Bag</h1>
+            <img src="assets/images/categories/bag.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4  ">
+          <div class=" cat3 p-3 rounded-2 d-flex align-items-center justify-content-between">
+            <h1 class="text-white">Shoes</h1>
+            <img src="assets/images/categories/shoes.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End cataegories section  -->
+
+    <!-- Start Shoes section -->
+    <section class="shoes">
+      <h3>Shoes</h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 border-0 shadow">
+            <img src="assets/images/shoes/shoe-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Supply 350</h4>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional..
+              </p>
+              <h4>$120</h4>
+            </div>
+            <div class="mb-5 ps-3">
+              <button class="btn panda-btn text-white px-4">Buy Now>></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow">
+            <img src="assets/images/shoes/shoe-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Nike 360</h4>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h4>$320</h4>
+            </div>
+            <div class="mb-5 ps-3">
+              <button class="btn panda-btn text-white px-4">Buy Now>></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow">
+            <img src="assets/images/shoes/shoe-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Red Airmax</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+              <h4>$350</h4>
+            </div>
+            <div class="mb-5 ps-3">
+              <button class="btn panda-btn text-white px-4">Buy Now>></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- End shoes section -->
+
+    <!-- Start Backpack Section  -->
+    <section class="backpack">
+      <h3>Backpack</h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 border-0 shadow">
+            <img src="assets/images/bags/bag-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Red Laltu Bag</h4>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional..
+              </p>
+              <h4>$120</h4>
+            </div>
+            <div class="mb-5 ps-3">
+              <button class="btn panda-btn text-white px-4">Buy Now>></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow">
+            <img src="assets/images/bags/bag-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Blue Niltu Bag</h4>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h4>$169</h4>
+            </div>
+            <div class="mb-5 ps-3">
+              <button class="btn panda-btn text-white px-4">Buy Now>></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow">
+            <img src="assets/images/bags/bag-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Black Kaltu Bag</h4>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+              <h4>$350</h4>
+            </div>
+            <div class="mb-5 ps-3">
+              <button class="btn panda-btn text-white px-4">Buy Now>></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Backpack Section  -->
+
+    <!-- Start Contact Area  -->
+    <section class="contact-area rounded-2">
+      <div class="row justify-content-center ">
+        <div class="col-md-4">
+          <h2>LET'S STAY IN TOUCH</h2>
+          <h6 class="text-muted">Get updates on sales, specials and more</h6>
+          <input class="form-control form-control-lg" type="text" placeholder="Email Id" aria-label=".form-control-lg">
+          <div class=" ">
+            <button class=" mt-2 btn panda-btn text-white px-4 text-uppercase" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Area  -->
+  </main>
+  <!-- End main area  -->
+
+  <!-- Start footer Area  -->
+  <footer class="text-center">
+      <p><small>&copy; 2021. Panda Commerce. All Rights Reserved || Nasreen Akter</small></p>
+  </footer>
+  <!-- End footer Area  -->
 
 
-  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
