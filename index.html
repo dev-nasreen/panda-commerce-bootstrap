@@ -14,7 +14,7 @@
   <!-- Start Header Section  -->
   <header class="container mb-5">
     <div class="row mb-5">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand border border-dark rounded-3 border-2" href="#"><img src="assets/images/logo.png"
             alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -24,16 +24,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item ">
-              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#shoe">Shoes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link " href="#backpack">Backpack</a>
+            </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#">Disabled</a>
+              <a class="nav-link " href="#team">Team</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#blog">Blog</a>
+            </li>
             </li>
           </ul>
         </div>
@@ -46,7 +52,7 @@
   <main class="container">
 
     <!-- Start Banner Section  -->
-    <section class="banner ">
+    <section class="banner" id="home">
       <div class="row">
         <div id="carouselExampleInterval" class="carousel slide rounded-3 panda-carousel" data-ride="carousel">
           <div class="carousel-inner">
@@ -106,24 +112,24 @@
     <!-- End Banner Section  -->
 
     <!-- Start Categories section  -->
-    <section class="categories">
+    <section class="categories" id="category">
       <div class="row justify-content-between">
         <div class="col-md-4 ">
           <div class=" cat1 p-3 rounded-2 d-flex align-items-center justify-content-between">
             <h1 class="text-white">Watch</h1>
-            <img src="assets/images/categories/watch.png" alt="">
+           <a href=""> <img src="assets/images/categories/watch.png" alt=""></a>
           </div>
         </div>
         <div class="col-md-4  ">
           <div class=" cat2 p-3 rounded-2 d-flex align-items-center justify-content-between">
             <h1 class="text-white">Bag</h1>
-            <img src="assets/images/categories/bag.png" alt="">
+            <a href=""><img src="assets/images/categories/bag.png" alt=""></a>
           </div>
         </div>
         <div class="col-md-4  ">
           <div class=" cat3 p-3 rounded-2 d-flex align-items-center justify-content-between">
             <h1 class="text-white">Shoes</h1>
-            <img src="assets/images/categories/shoes.png" alt="">
+            <a href=""><img src="assets/images/categories/shoes.png" alt=""></a>
           </div>
         </div>
       </div>
@@ -131,7 +137,7 @@
     <!-- End cataegories section  -->
 
     <!-- Start Shoes section -->
-    <section class="shoes">
+    <section class="shoes" id="shoe">
       <h3>Shoes</h3>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
@@ -180,7 +186,7 @@
     <!-- End shoes section -->
 
     <!-- Start Backpack Section  -->
-    <section class="backpack">
+    <section class="backpack" id="backpack">
       <h3>Backpack</h3>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
@@ -228,6 +234,38 @@
     </section>
     <!-- End Backpack Section  -->
 
+    <!-- Team member area  -->
+    <section class="team-member-area shadow rounded-3" id="team">
+      <h3>Team Members</h3>
+      <div class="row">
+        <div class="col-md-4 d-flex member justify-content-center align-items-center p-5 border border-light">
+          <img src="assets/images/leader/tm1.png" alt="">
+          <h3>Jhon Smith</h3>
+        </div>
+        <div class="col-md-4 d-flex member justify-content-center align-items-center p-5 border border-light">
+          <img src="assets/images/leader/tm2.png" alt="">
+          <h3>Jhon Smith</h3>
+        </div>
+        <div class="col-md-4 d-flex member justify-content-center align-items-center p-5 border border-light">
+          <img src="assets/images/leader/tm3.png" alt="">
+          <h3>Jhon Smith</h3>
+        </div>
+        <div class="col-md-4 d-flex member justify-content-center align-items-center p-5 border border-light">
+          <img src="assets/images/leader/tm4.png" alt="">
+          <h3>Jhon Smith</h3>
+        </div>
+        <div class="col-md-4 d-flex member justify-content-center align-items-center p-5 border border-light">
+          <img src="assets/images/leader/tm5.png" alt="">
+          <h3>Jhon Smith</h3>
+        </div>
+        <div class="col-md-4 d-flex member justify-content-center align-items-center p-5 border border-light">
+          <img src="assets/images/leader/tm6.png" alt="">
+          <h3>Jhon Smith</h3>
+        </div>
+      </div>
+    </section>
+    <!-- End team member area  -->
+
     <!-- Start Contact Area  -->
     <section class="contact-area rounded-2">
       <div class="row justify-content-center ">
@@ -242,12 +280,52 @@
       </div>
     </section>
     <!-- End Contact Area  -->
+
+    <!-- Start blog area  -->
+    <section class="blog-area"  id="blog">
+      <h3>Top Blogs</h3>
+      <div class="row">
+        <div class="col-md-6 single-blog d-flex justify-content-center align-items-center">
+          <img src="assets/images/leader/blog1.png" class="img-fluid" alt="">
+          <div class="blog-text ms-3">
+            <h4>13 of My Favorite UI/UX Goodies</h4>
+            <p>By <a href="" class="fw-light"> Danny Sapio</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-6 single-blog d-flex justify-content-center align-items-center">
+          <img src="assets/images/leader/blog2.png" class="img-fluid" alt="">
+          <div class="blog-text ms-3">
+            <h4>13 of My Favorite UI/UX Goodies</h4>
+            <p>By <a href="" class="fw-light"> Danny Sapio</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6 single-blog d-flex justify-content-center align-items-center">
+          <img src="assets/images/leader/blog3.png" class="img-fluid" alt="">
+          <div class="blog-text ms-3">
+            <h4>13 of My Favorite UI/UX Goodies</h4>
+            <p>By <a href="" class="fw-light"> Danny Sapio</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 single-blog d-flex justify-content-center align-items-center">
+          <img src="assets/images/leader/blog4.png" class="img-fluid" alt="">
+          <div class="blog-text ms-3">
+            <h4>13 of My Favorite UI/UX Goodies</h4>
+            <p>By <a href="" class="fw-light"> Danny Sapio</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End blog area  -->
+
   </main>
   <!-- End main area  -->
 
   <!-- Start footer Area  -->
   <footer class="text-center">
-      <p><small>&copy; 2021. Panda Commerce. All Rights Reserved || Nasreen Akter</small></p>
+    <p><small>&copy; 2021. Panda Commerce. All Rights Reserved || Nasreen Akter</small></p>
   </footer>
   <!-- End footer Area  -->
 

@@ -30,3 +30,20 @@ section{
     background-color: #fceae8;
     padding: 100px 0;
 }
+.member{
+    background-color: burlywood;
+}
+.member img{
+    width: 70px;
+    height: 70px;
+}
+.member h3{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.single-blog a{
+    color:royalblue
+}
+.single-blog img{
+    width:50%;
+}
